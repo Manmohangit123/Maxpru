@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            color: rgb(22, 183, 22);
+            font-size: 24px;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            background-color: #f9f9f9;
+        }
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(22, 183, 22);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #138d13;
+        }
+        .login-container .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-container .signup-link a {
+            color: #16b716;
+            text-decoration: none;
+        }
+        .login-container .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">🌿MAXPRU -- Book.Play.Enjoy</div>
+</header>
+<main>
+    <div class="login-container">
+        <h2>SIGNUP TO PLAY</h2>
+        <form id="signupForm" onsubmit="return checkPasswords(event)">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <input type="password" id="confirmPassword" placeholder="Re-enter Password" required>
+            <input type="E-mail address" id="E-mail address" placeholder="E-mail address" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="signup-link">
+            <p>If you already have an account? <a href="maxprulogin.html">Sign in</a></p>
+        </div>
+        <p id="message"></p>
+    </div>
+</main>
+
+<script>
+    function checkPasswords(event) {
+        event.preventDefault(); // Prevent form submission
+
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        const messageElement = document.getElementById("message");
+
+        if (password === confirmPassword) {
+            messageElement.style.color = "green";
+            messageElement.textContent = "Passwords matched! Signedup...";
+            // Redirect to the sign-in page after a short delay
+            setTimeout(() => {
+                window.location.href = "maxprulogin.html";
+            }, 1000);
+        } else {
+            messageElement.style.color = "red";
+            messageElement.textContent = "Passwords do not match. check properly.";
+        }
+    }
+</script>
+</body>
+</html>

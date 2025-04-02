@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿MAXPRU -- Book.Play.Enjoy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            color: rgb(22, 183, 22);
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a{
+            margin-left: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav {
+             display: flex;
+             align-items: center;
+            flex-wrap: nowrap;
+            }
+
+        .get-app {
+            background-color: rgb(22, 183, 22);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+        .logged-in {
+            position: relative;
+            cursor: pointer;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .popup a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+        .popup a:last-child {
+            border-bottom: none;
+        }
+        .popup a:hover {
+            background-color: #f0f0f0;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tabs a {
+            margin-right: 20px;
+            color: #0d0d0d;
+            text-decoration: none;
+            padding-bottom: 5px;
+        }
+        .tabs a.active {
+            border-bottom: 2px solid rgb(22, 183, 22);
+        }
+        .venues {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .venue-card {
+            width: 300px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s;
+            background-color: #fff;
+        }
+
+        .venue-card:hover {
+            transform: scale(1.05);
+        }
+        .venue-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .venue-info {
+            padding: 10px;
+        }
+        .venue-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .venue-location {
+            color: #666;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px;
+            background-color: rgb(22, 183, 22);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(22, 183, 22);
+            color: darkgreen;
+        }
+        .bottom-text {
+            text-align: center;
+            background-color: rgb(22, 183, 22);
+            color: black;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><font size="5" color="green">🌿MAXPRU -- Book.Play.Enjoy</font></div>
+        <nav>
+            <a href="#"><button>📍Vijayawada🔽</button></a>
+            <a href="manmohan.html"><button>⚾️🏏BOOK</button></a>
+            <a href="maxprucontacts.html"><font size="4"><button>☎️CONTACTS</button></font></a>
+            <a href="maxprulearn.html"><font size="5"><button>📖ABOUT</button></font></a>
+            <a href="#"> <div class="logged-in"><button>👤 </button>
+                <div class="popup">
+                    <a href="#">Profile</a>
+                    <a href="#">My Bookings</a>
+                    <a href="#">Settings</a>
+                    <a href="maxprulogin.html">Logout</a>
+           </div> </div></a>
+        </nav>
+    </header>
+    <main>
+        <h1>"Champions keep playing until they get it right."🌟⚽</h1>
+        <div class="tabs">
+            <a href="manmohan.html" class="active"><font size="3" color="black" face="Times New Roman">🏟️Venues (23)</a>
+            <a href="maxprucoaching.html">🧑‍🏫Coaching (0)</a>
+            <a href="maxpruevents.html">📅Events (0)</a>
+            <a href="maxpruoffers.html"> 🎟️Coupons and Offers(3)</a>
+            <a href="maxprucommunity.html">👥Community</a>
+            </div>
+        <div class="venues">
+            <div class="venue-card">
+               <img src ="test.avif"  alt="ICON SPORTS">
+                <div class="venue-info">
+                    <div class="venue-name">ICON SPORTS</div>
+                    <div class="venue-rating">Rating - ⭐️5(6)</div>
+                    <div class="venue-locationnname">GURUNANAK colony</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/place/Icon+sports/@16.5064994,80.6655693,835m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a35fbe648b15f49:0xd26d2f60cd2923c2!8m2!3d16.5064994!4d80.6681442!16s%2Fg%2F11fjtz5wx5?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹800/hour  </div>
+                        <div class="venue-price">Price night : ₹1000/hour</div>
+                        <div class="venue-contactno">📞Contact no : 9889889888</div>
+                        <div class="venue-mailid">✉️ Mail id: icon@gmail.com</div>
+                        <a href="maxpru.html">
+                            <button id="submit">Book Slot</button></a>
+            </div>
+            </div>
+            <div class="venue-card">
+                <img src="text23.jpeg" alt="TGIFF">
+                <div class="venue-info">
+                    <div class="venue-name">TGIFF</div>
+                    <div class="venue-rating">Rating - ⭐️4.2(20)</div>
+                    <div class="venue-locationname">gundala BRTS road</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/place/TGIFF+-+The+Great+Indian+Food+Factory/@16.5243877,80.6535866,835m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a35e5379366d39d:0x915f46d184a941e!8m2!3d16.5243877!4d80.6561615!16s%2Fg%2F11c58p58t6?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹1000/hour  </div>
+                        <div class="venue-price">Price night : ₹1200/hour</div>
+                        <div class="venue-contactno">📞Contact no: 9398777887</div>
+                        <div class="venue-mailid">✉️ Mail id: tgiff@gmail.com</div>
+                        <a href="maxpru.html"><button>Book Slot</button></a>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="team 9.jpeg" alt="TEAM 9 PLAY ARENA">
+                <div class="venue-info">
+                    <div class="venue-name">TEAM 9 PLAY ARENA</div>
+                    <div class="venue-rating">Rating - ⭐️5(10)</div>
+                    <div class="venue-locationname">NTR colony</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/place/Team9+Sports+Arena/@16.5157775,80.663223,835m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a35e5a60c185e4d:0x884161ef919a1c7c!8m2!3d16.5157775!4d80.6657979!16s%2Fg%2F11jf9hx577?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹800/hour </div>
+                    <div class="venue-price">Price night : ₹1000/hour </div>
+                    <div class="venue-contactno">📞Contact no: 9467778696</div>
+                    <div class="venue-mailid">✉️ Mail id: team9@gmail.com</div>
+                    <a href="maxpru.html"><button>Book Slot</button></a>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="blooming.jpeg" alt="BLOOMINGDALE SCHOOL">
+                <div class="venue-info">
+                    <div class="venue-name">BLOOMINGDALE SCHOOL</div>
+                    <div class="venue-rating">Rating - ⭐️4.5(19)</div>
+                    <div class="venue-locationname">Gosala</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/place/Bloomingdale+International+school+(Galileo+Campus)/@16.5012317,80.5312227,26721m/data=!3m1!1e3!4m10!1m2!2m1!1sbloomingdale+international+school+vijayawada!3m6!1s0x3a35fab834015e77:0x1660809113441b72!8m2!3d16.4713701!4d80.7274304!15sCixibG9vbWluZ2RhbGUgaW50ZXJuYXRpb25hbCBzY2hvb2wgdmlqYXlhd2FkYZIBFGludGVybmF0aW9uYWxfc2Nob29s4AEA!16s%2Fg%2F124t1rv1r?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹1000/hour </div>
+                    <div class="venue-price">Price night : ₹1300/hour</div>
+                    <div class="venue-contactno">📞Contact no: 7123445588</div>
+                    <div class="venue-mailid">✉️ Mail id: bssgdh@gmail.com</div>
+                    <a href="maxpru.html"><button>Book Slot</button></a>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="ourzone.jpeg" alt="OUR ZONE">
+                <div class="venue-info">
+                    <div class="venue-name">OUR ZONE</div>
+                    <div class="venue-rating">Rating - ⭐️3.8(60)</div>
+                    <div class="venue-locationname">KUNCHUNPALLI</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/search/our+zone/@16.5034379,80.5336584,53440m/data=!3m2!1e3!4b1?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹900/hour</div>
+                    <div class="venue-price">Price night : ₹1100/hour</div>
+                    <div class="venue-contactno">📞Contact no: 7909998877</div>
+                    <div class="venue-mailid">✉️ Mail id: ourzone@gmail.com</div>
+                    <a href="maxpru.html"><button>Book Slot</button></a>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="pedha.jpeg" alt="3 WICKETS">
+                <div class="venue-info">
+                    <div class="venue-name">3 WICKETS</div>
+                    <div class="venue-rating">Rating - ⭐️5(4)</div>
+                    <div class="venue-locationname">pedha pullipaka</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/place/3+Wickets/@16.4582728,80.678684,835m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a35fb2728998f33:0xe8191dbf6430fbb7!8m2!3d16.4582728!4d80.6812589!16s%2Fg%2F11vjjc69l8?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹700/hour </div>
+                    <div class="venue-price">Price night : ₹900/hour</div>
+                    <div class="venue-contactno">📞Contact no: 9198790009</div>
+                    <div class="venue-mailid">✉️ Mail id: 3wickets@gmail.com</div>
+                    <a href="maxpru.html"><button>Book Slot</button></a>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="popular.gif" alt="POPULAR SPORTS CENTER">
+                <div class="venue-info">
+                    <div class="venue-name">POPULAR SPORTS CENTER</div>
+                    <div class="venue-rating">Rating - ⭐️4(30)</div>
+                    <div class="venue-locationname">Gayathri nagar</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/place/Popular+Sports+Center/@16.5034803,80.6518829,835m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a35fbbfb1d765d1:0x9d57fccd6d8c307d!8m2!3d16.5034803!4d80.6544578!16s%2Fg%2F11ptp0br5y?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹1100/hour</div>
+                        <div class="venue-price">Price night  : ₹1300/hour</div>
+                    <div class="venue-contactno">📞Contact no: 7877655554</div>
+                    <div class="venue-mailid">✉️ Mail id: popular@gmail.com</div>
+                    <a href="maxpru.html"><button>Book Slot</button></a>
+                </div>
+            </div>
+            <div class="venue-card">
+                <img src="crazy.jpeg" alt="crazy TURF">
+                <div class="venue-info">
+                    <div class="venue-name">CRAZY TURF</div>
+                    <div class="venue-rating">Rating - ⭐️4.35(15)</div>
+                    <div class="venue-locationname">krishna lanka</div>
+                    <div class = "venue-location"><a href="https://www.google.com/maps/place/Crazy+Turf/@16.5069701,80.613305,835m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a35f1764693cd8d:0x55599bfce477bb0b!8m2!3d16.5069701!4d80.6158799!16s%2Fg%2F11lrrxyt3l?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">LOCATION</a></div>
+                    <div class="venue-price">Price morning : ₹600/hour </div>
+                    <div class="venue-price">Price night   : ₹800/hour</div>
+                    <div class="venue-contactno">📞Contact no: 7234568901</div>
+                    <div class="venue-mailid">✉️ Mail id: crazy@gmail.com</div>
+                    <a href="maxpru.html"><button>Book Slot</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const loggedInButton = document.querySelector('.logged-in button');
+        const popup = document.querySelector('.logged-in .popup');
+
+        loggedInButton.addEventListener('click', () => {
+            popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        });
+
+        window.addEventListener('click', (e) => {
+            if (!document.querySelector('.logged-in').contains(e.target)) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
+
+    <div class="bottom-text"><font align="center"><p>&copy; --Book.Play.Enjoy--</p></font></div>
+</body>
+</html>
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        background-color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        color: rgb(22, 183, 22);
+        font-size: 24px;
+        font-weight: bold;
+    }
+    nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+    }
+    .get-app {
+        background-color: rgb(22, 183, 22);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        background-color: #f9f9f9;
+    }
+    .login-container {
+        background: white;
+        padding: 40px; /* Increased padding for a larger container */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 400px; /* Increased width for a larger container */
+        text-align: center;
+    }
+    .login-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .login-container input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .login-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(22, 183, 22);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .login-container button:hover {
+        background-color: #138d13;
+    }
+    .login-container .signup-link {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .login-container .signup-link a {
+        color: #16b716;
+        text-decoration: none;
+    }
+    .login-container .signup-link a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body><header>
+    <div class="logo"><font size="5" color="green">🌿MAXPRU -- Book.Play.Enjoy</font></div>
+    <nav>
+        <a href="maxprulogin.html"><font color="green">Signin</font></a>
+        <a href="maxprusignup.html"><font color="green">Signup</font></a>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="login-container">
+        <h2>Login to play</h2>
+        <form action="manmohan.html" method="get">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+            <p>Don't have an account? <a href="maxprusignup.html">Sign up</a></p>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

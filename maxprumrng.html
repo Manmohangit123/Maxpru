@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌿MAXPRU -- Book.Play.Enjoy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            color: #00c853;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .get-app {
+            background-color: #00c853;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+        .logged-in {
+            position: relative;
+            cursor: pointer;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .popup a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+        .popup a:last-child {
+            border-bottom: none;
+        }
+        .popup a:hover {
+            background-color: #f0f0f0;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tabs a {
+            margin-right: 20px;
+            color: #333;
+            text-decoration: none;
+            padding-bottom: 5px;
+        }
+        .tabs a.active {
+            border-bottom: 2px solid #00c853;
+        }
+        .venues {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .venue-card {
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .venue-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .venue-info {
+            padding: 10px;
+        }
+        .venue-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .venue-location {
+            color: #666;
+            font-size: 14px;
+        }
+        button {
+            padding: 10px;
+            background-color: rgb(22, 183, 22);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(22, 183, 22);
+            color: darkgreen;
+        }
+        .bottom-text {
+      text-align: center;
+      background-color: rgb(22, 183, 22); /* Green background */
+      color: black;  /* Green text color */
+      padding: 10px 20px;
+     
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><font size="5" color="green">🌿MAXPRU -- Book.Play.Enjoy</font></div>
+        <nav>
+            <a href="#"><button>📍Vijayawada🔽</button></a>
+            <a href="manmohan.html"><button>⚾️🏏BOOK</button></a>
+            <a href="maxprucontacts.html"><font size="4"><button>☎️CONTACTS</button></font></a>
+            <a href="maxprulearn.html"><font size="5"><button>📖ABOUT</button></font></a>
+            <div class="logged-in"><button>👤 </button>
+                <div class="popup">
+                    <a href="#">Profile</a>
+                    <a href="#">My Bookings</a>
+                    <a href="#">Settings</a>
+                    <a href="maxprulogin.html">Logout</a>
+           </div> </div>
+        </nav>
+    </header>
+    <main>
+        <h1>  "Under the lights, where passion meets the pitch." 🌟⚽</h1>
+        <div class="tabs">
+            <a href="manmohan.html" ><font size="3" color="black" face="Times New Roman">🏟️Venues (23)</a>
+            <a href="maxprucoaching.html" class = "active">🧑‍🏫Coaching (0)</a>
+            <a href="maxpruevents.html">📅Events (0)</a>
+            <a href="maxpruoffers.html"> 🎟️Coupons and Offers(3)</a>
+            <a href="maxprucommunity.html">👥Community</a>
+        </div>
+    <h2><font size=“5” color=“teal” face="Verdana">Slot is booked in the morning</font></h2>
+<a href="maxpru.html"><button>BACK</button></a>
+<a href="manmohan.html"><button>CANCEL</button></a>
+<h1>To apply any offers</h1>
+<a href="maxpruoffers.html"><button>APPLY</button></a>
+</main>
+<script>
+    const loggedInButton = document.querySelector('.logged-in button');
+    const popup = document.querySelector('.logged-in .popup');
+
+    loggedInButton.addEventListener('click', () => {
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (!document.querySelector('.logged-in').contains(e.target)) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
