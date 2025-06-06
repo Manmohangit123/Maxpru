@@ -4,4 +4,5 @@ Here we can book slots for the turfs in the morning and evening sessions separat
 on some special days we have exculsive offers and discounts for the customers.
 
 file:///C:/Users/kanch/OneDrive/Desktop/githubprojects/maxpru-project/manmohan.html
-![image](https://github.com/user-attachments/assets/940fea9f-46fb-4e80-972b-518b3fb859d3)
+
+![image](https://github.com/user-attachments/assets/2a872962-f1b9-4cb8-8864-592fcd5bfedd)
