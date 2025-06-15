@@ -2,11 +2,11 @@
 
 ## Overview
 
-<h3>This project is a frontend webdevelopment project. I used html , Css and javascript in this project.
+<h4>This project is a frontend webdevelopment project. I used html , Css and javascript in this project.
 Here we can book slots for the turfs in the morning and evening sessions separatly.
 on some special days we have exculsive offers and discounts for the customers.
 It is a user-friendly Interface.User can easily move from any webpage to any other webpage in the website.
-So the user may easily understand website interface.</h3>
+So the user may easily understand website interface.</h4>
 
 ## Project Link
 
